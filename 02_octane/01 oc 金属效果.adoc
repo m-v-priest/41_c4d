@@ -1,0 +1,45 @@
+
+= 01. oc 金属效果
+:toc:
+
+---
+
+image:img_oc/001 金属-1.png[]
+
+index层的值, 设成1, 则就是镜面全反射. +
+如果要白色金属, 则在specular层中, 将颜色改成白色即可.
+
+image:img_oc/001 金属-2.png[]
+
+---
+
+如果整体画面太暗, 则可以添加一个 oc的 texture environment
+
+image:img_oc/001 金属-3.png[]
+
+---
+
+我们为了让金属物体能反射出环境光, 可以添加hdri环境
+
+image:img_oc/001 金属-4.png[]
+
+如果我们不想将hdri贴图作为背景显示在场景中, 只想让3d物体表面反射hdri贴图, 就将type改成 visible environment. +
+并将其的子值只打开 reflections.
+
+注意, 为了让3d物体的镜面材质, 能很明显的反射出hdri贴图, 必须将镜面材质的粗糙度(roughness), 降低或关闭.
+
+image:img_oc/001 金属-6.png[]
+
+image:img_oc/001 金属-5.png[]
+
+---
+
+如果你觉得hdri贴图的颜色太亮或太暗, 还可以设置hdri贴图的曝光度
+
+image:img_oc/001 金属-7.png[]
+
+image:img_oc/001 金属-8.png[]
+
+---
+
+
