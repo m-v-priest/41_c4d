@@ -1,0 +1,17 @@
+
+= oc材质的各层级作用
+:toc:
+
+---
+
+== Diffuse层 : 慢射层
+
+image:img_oc/005 各层级-1.png[]
+
+diffuse层, 可以用来添加贴图, 首先要加入oc的ImageTexture
+
+
+
+
+
+

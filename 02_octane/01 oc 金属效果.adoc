@@ -4,6 +4,8 @@
 
 ---
 
+== 金属效果
+
 image:img_oc/001 金属-1.png[]
 
 index层的值, 设成1, 则就是镜面全反射. +
@@ -18,6 +20,8 @@ image:img_oc/001 金属-2.png[]
 image:img_oc/001 金属-3.png[]
 
 ---
+
+== hdri 环境贴图
 
 我们为了让金属物体能反射出环境光, 可以添加hdri环境
 
@@ -41,5 +45,34 @@ image:img_oc/001 金属-7.png[]
 image:img_oc/001 金属-8.png[]
 
 ---
+
+另一种方法是: 在环境贴图设置中, 点这个三角
+
+image:img_oc/001 金属-9.png[]
+
+image:img_oc/001 金属-10.png[]
+
+image:img_oc/001 金属-11.png[]
+
+image:img_oc/001 金属-12.png[]
+
+image:img_oc/001 金属-13.png[]
+
+---
+
+== 凹凸贴图
+
+我们来用凹凸贴图(假凹凸), 来赋给地面 +
+1. 先创建一个 glossy材质, 赋给地面 +
+2. 再关掉diffuse层, bump层中, 添加一个oc的ImageTexture, 它有一个好处, 自带uv.
+
+image:img_oc/001 金属-14.png[]
+
+image:img_oc/001 金属-15.png[]
+
+image:img_oc/001 金属-16.png[]
+
+
+
 
 
